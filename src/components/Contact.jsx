@@ -21,12 +21,17 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Form Submitted Successfully ✅");
       event.target.reset();
     } else {
       console.log("Error", data);
-      setResult(data.message);
+      setResult("Failed to submit. Please try again ❌");
     }
+
+    // Auto-dismiss after 5 seconds
+    setTimeout(() => {
+      setResult("");
+    }, 5000);
   };
 
   return (
@@ -175,7 +180,22 @@ const Contact = () => {
                   Send Message
                 </motion.button>
               </div>
-              <span className="text-gray-400 text-sm">{result}</span>
+
+              {/* Animated result message */}
+              {result && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className={`text-sm font-medium px-4 py-2 rounded-md mt-2 inline-block ${
+                    result.includes("Success")
+                      ? "text-green-400 bg-green-800/20 border border-green-500/30"
+                      : "text-red-400 bg-red-800/20 border border-red-500/30"
+                  }`}
+                >
+                  {result}
+                </motion.div>
+              )}
             </form>
           </motion.div>
         </div>

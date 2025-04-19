@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline'; // Ensure you have this icon library installed
+import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline';
 
 const Projects = () => {
   const projects = [
@@ -59,17 +59,19 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -10 }}
-              className="bg-gray-700 rounded-xl shadow-lg overflow-hidden transition-all duration-300 border border-gray-600 hover:border-indigo-500/50"
+              className="group bg-gray-700 rounded-xl shadow-lg overflow-hidden transition-all duration-300 border border-gray-600 hover:border-indigo-500/50 hover:shadow-2xl transform hover:scale-[1.02] hover:ring-1 hover:ring-indigo-400/30"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
-                  <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                  <h3 className="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors duration-300">
+                    {project.title}
+                  </h3>
                 </div>
               </div>
               <div className="p-6">
@@ -87,14 +89,14 @@ const Projects = () => {
                 <div className="flex space-x-4">
                   <a
                     href={project.codeLink}
-                    className="flex items-center text-gray-300 hover:text-indigo-400 transition-colors"
+                    className="flex items-center text-gray-300 hover:text-indigo-400 transition-colors duration-300 hover:scale-105"
                   >
                     <CodeBracketIcon className="h-5 w-5 mr-2" />
                     Code
                   </a>
                   <a
                     href={project.liveLink}
-                    className="flex items-center text-gray-300 hover:text-indigo-400 transition-colors"
+                    className="flex items-center text-gray-300 hover:text-indigo-400 transition-colors duration-300 hover:scale-105"
                   >
                     <EyeIcon className="h-5 w-5 mr-2" />
                     Live Demo

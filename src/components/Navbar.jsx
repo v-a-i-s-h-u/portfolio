@@ -44,7 +44,7 @@ const Navbar = () => {
       className="fixed w-full bg-gray-900/80 backdrop-blur-md z-50 shadow-sm border-b border-gray-800"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-evenly h-16">
           <div className="flex items-center">
             <motion.a 
               href="#home"
