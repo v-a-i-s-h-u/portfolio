@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaBehance } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-gray-400">
-              &copy; {new Date().getFullYear()} Prem Kumar J. All rights reserved.
+              &copy; {new Date().getFullYear()} Vaishnavi S. All rights reserved.
             </p>
           </div>
           <div className="flex space-x-6">
             <motion.a
-              href="https://github.com/PREM-KUMAR-J"
+              href="https://github.com/v-a-i-s-h-u"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -3 }}
@@ -22,22 +22,13 @@ const Footer = () => {
               <FaGithub className="h-5 w-5" />
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/premkumarj00/"
+              href="https://www.linkedin.com/in/vaishnavi-srinivasan-b8b3a6234"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -3 }}
               className="text-gray-400 hover:text-indigo-400 transition-colors"
             >
               <FaLinkedin className="h-5 w-5" />
-            </motion.a>
-            <motion.a
-              href="https://www.behance.net/premkumarj00"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ y: -3 }}
-              className="text-gray-400 hover:text-indigo-400 transition-colors"
-            >
-              <FaBehance className="h-5 w-5" />
             </motion.a>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaBehance } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MapPinIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 const Contact = () => {
@@ -10,8 +10,7 @@ const Contact = () => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-
-    formData.append("access_key", "8f8c0374-ad95-4b40-85a1-8b6f46dc268c");
+    formData.append("access_key", "d9194065-1922-496a-92dd-6b1e1201bc58");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -19,7 +18,6 @@ const Contact = () => {
     });
 
     const data = await response.json();
-
     if (data.success) {
       setResult("Form Submitted Successfully ✅");
       event.target.reset();
@@ -28,10 +26,7 @@ const Contact = () => {
       setResult("Failed to submit. Please try again ❌");
     }
 
-    // Auto-dismiss after 5 seconds
-    setTimeout(() => {
-      setResult("");
-    }, 5000);
+    setTimeout(() => setResult(""), 5000);
   };
 
   return (
@@ -67,7 +62,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white">Location</h3>
-                  <p className="text-gray-400">Kilpauk, Chennai</p>
+                  <p className="text-gray-400">Krishnanagar, Puducherry</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -76,7 +71,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white">Email</h3>
-                  <p className="text-gray-400">premjd2000@gmail.com</p>
+                  <p className="text-gray-400">saivaishna030@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -85,7 +80,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white">Phone</h3>
-                  <p className="text-gray-400">+91 86108 94125</p>
+                  <p className="text-gray-400">+91 80127 77375</p>
                 </div>
               </div>
             </div>
@@ -94,7 +89,7 @@ const Contact = () => {
               <h3 className="text-lg font-medium text-white mb-4">Follow Me</h3>
               <div className="flex space-x-4">
                 <motion.a
-                  href="https://github.com/PREM-KUMAR-J"
+                  href="https://github.com/v-a-i-s-h-u"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ y: -3 }}
@@ -103,22 +98,13 @@ const Contact = () => {
                   <FaGithub className="h-5 w-5" />
                 </motion.a>
                 <motion.a
-                  href="https://www.linkedin.com/in/premkumarj00/"
+                  href="https://www.linkedin.com/in/vaishnavi-srinivasan-b8b3a6234"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ y: -3 }}
                   className="bg-gray-700 p-3 rounded-full text-gray-300 hover:bg-indigo-900/30 hover:text-indigo-400 transition-colors"
                 >
                   <FaLinkedin className="h-5 w-5" />
-                </motion.a>
-                <motion.a
-                  href="https://www.behance.net/premkumarj00"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ y: -3 }}
-                  className="bg-gray-700 p-3 rounded-full text-gray-300 hover:bg-indigo-900/30 hover:text-indigo-400 transition-colors"
-                >
-                  <FaBehance className="h-5 w-5" />
                 </motion.a>
               </div>
             </div>
@@ -181,7 +167,6 @@ const Contact = () => {
                 </motion.button>
               </div>
 
-              {/* Animated result message */}
               {result && (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}

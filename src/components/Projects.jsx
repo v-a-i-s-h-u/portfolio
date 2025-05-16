@@ -1,36 +1,39 @@
+//Projects.jsx
 import { motion } from 'framer-motion';
 import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline';
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      title: 'E-commerce Platform',
-      description: 'A full-featured online store with product listings, cart functionality, and secure checkout.',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
-      codeLink: '#',
-      liveLink: '#',
-    },
-    {
-      id: 2,
-      title: 'Task Management App',
-      description: 'A productivity application for organizing tasks with drag-and-drop functionality and team collaboration.',
-      tags: ['React', 'Firebase', 'Tailwind CSS'],
-      image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
-      codeLink: '#',
-      liveLink: '#',
-    },
-    {
-      id: 3,
-      title: 'Weather Dashboard',
-      description: 'Real-time weather information with 5-day forecast and location-based services.',
-      tags: ['JavaScript', 'API Integration', 'CSS'],
-      image: 'https://images.unsplash.com/photo-1601134467661-3d775b999c8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
-      codeLink: '#',
-      liveLink: '#',
-    },
-  ];
+const projects = [
+  {
+    id: 1,
+    title: 'Cab Booking Service',
+    description: 'A responsive cab booking app built with React.js featuring ride selection, fare estimation, and booking confirmation.',
+    tags: ['React.js', 'React Router', 'CSS'],
+    image: 'https://images.pexels.com/photos/4386367/pexels-photo-4386367.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800',
+    codeLink: '#',
+    liveLink: '#',
+  },
+  {
+    id: 2,
+    title: 'E-commerce Website',
+    description: 'A full-stack MERN application with user authentication, product management, cart, and admin panel features.',
+    tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
+    image: 'https://images.pexels.com/photos/5632385/pexels-photo-5632385.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800',
+    codeLink: '#',
+    liveLink: '#',
+  },
+  {
+    id: 3,
+    title: 'Tissue Cell Classification',
+    description: 'A deep learning CAD system for classifying lung tissues as benign or malignant using RCNN.',
+    tags: ['Python', 'Deep Learning', 'RCNN'],
+    image: 'https://images.pexels.com/photos/3735717/pexels-photo-3735717.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800',
+    codeLink: '#',
+    liveLink: '#',
+  },
+];
+
+
 
   return (
     <section id="projects" className="py-20 bg-gray-800">

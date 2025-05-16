@@ -1,21 +1,42 @@
 import { motion } from 'framer-motion';
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaBootstrap, FaNodeJs, FaGithub, FaBehance } from 'react-icons/fa';
-import { SiMongodb, SiFigma, SiTailwindcss, SiExpress } from 'react-icons/si';
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaReact,
+  FaBootstrap,
+  FaNodeJs,
+  FaGithub,
+} from 'react-icons/fa';
+import {
+  SiMongodb,
+  SiFigma,
+  SiTailwindcss,
+  SiExpress,
+  SiPython,
+  SiDjango,
+} from 'react-icons/si';
 
 const Skills = () => {
   const skills = [
+    // Frontend
     { name: 'HTML', icon: <FaHtml5 className="text-orange-500" /> },
     { name: 'CSS', icon: <FaCss3Alt className="text-blue-500" /> },
     { name: 'JavaScript', icon: <FaJsSquare className="text-yellow-400" /> },
     { name: 'React', icon: <FaReact className="text-cyan-400" /> },
-    { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },
     { name: 'Bootstrap', icon: <FaBootstrap className="text-purple-500" /> },
-    { name: 'Figma', icon: <SiFigma className="text-pink-500" /> },
-    { name: 'Node.js', icon: <FaNodeJs className="text-green-500" /> },
     { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-sky-400" /> },
-    { name: 'Express', icon: <SiExpress className="text-gray-300" /> },
+
+    // Backend
+    { name: 'Node.js', icon: <FaNodeJs className="text-green-500" /> },
+    { name: 'Express.js', icon: <SiExpress className="text-gray-300" /> },
+    { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },
+    { name: 'Python', icon: <SiPython className="text-yellow-300" /> },
+    { name: 'Django', icon: <SiDjango className="text-green-400" /> },
+
+    // Tools
+    { name: 'Figma', icon: <SiFigma className="text-pink-500" /> },
     { name: 'GitHub', icon: <FaGithub className="text-gray-300" /> },
-    { name: 'Behance', icon: <FaBehance className="text-blue-400" /> },
   ];
 
   return (

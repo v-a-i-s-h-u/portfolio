@@ -51,7 +51,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               className="text-xl font-bold text-white hover:text-indigo-400 transition-colors"
             >
-              Prem Kumar J
+              Vaishnavi S
             </motion.a>
           </div>
           <div className="hidden md:flex items-center space-x-8">

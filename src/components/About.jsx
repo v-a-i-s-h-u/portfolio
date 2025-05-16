@@ -1,3 +1,4 @@
+// About.jsx
 import { motion } from 'framer-motion';
 
 const About = () => {
@@ -29,7 +30,7 @@ const About = () => {
             className="md:w-1/3 flex justify-center"
           >
             <div className="relative">
-              <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-500 opacity-20 blur-xl"></div>
+              <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-pink-500 to-purple-500 opacity-20 blur-xl"></div>
               <img
                 src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                 alt="Profile"
@@ -47,19 +48,19 @@ const About = () => {
             className="md:w-2/3 text-center md:text-left"
           >
             <h3 className="text-2xl font-bold text-white mb-4">
-              I&apos;m Prem Kumar J, a Full Stack Developer
+              I&apos;m Vaishnavi S, a MERN Stack Developer
             </h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              I am a fresher in full-stack web development with hands-on experience in React, Node.js, MongoDB, and other modern technologies. I recently completed a 6-month internship at WhyTap as a Full Stack Web Developer, where I gained practical exposure to building real-world web applications. Prior to this, I worked for 2 years and 10 months as an Office Assistant in a manufacturing company, where I developed strong skills in data handling, organization, and communication. I&apos;m now excited to combine my technical skills and professional experience to contribute meaningfully to web development projects.
+              I am a passionate full-stack web developer with experience in building responsive web and mobile applications using the MERN stack. I’m currently interning at Whytap, focusing on both front-end and back-end development using React, Node.js, Python (Django), and more. I’ve previously worked as a Python Developer at BLP Industry.AI and as a Java Developer Intern at Bahwan CyberTek. I love learning new technologies and turning ideas into real-world solutions through clean and efficient code.
             </p>
 
             {/* Download Resume Button */}
             <motion.a
-              href="/Prem_Kumar_J_Resume.pdf"
+              href="./Vaishnavi-S.pdf"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:from-indigo-700 hover:to-purple-700 transition-all"
+              className="inline-block px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:from-pink-700 hover:to-purple-700 transition-all"
             >
               Download Resume
             </motion.a>

@@ -1,36 +1,47 @@
+//Experience.jsx
 import { motion } from 'framer-motion';
 import { BriefcaseIcon, AcademicCapIcon } from '@heroicons/react/24/outline';
 
 const Experience = () => {
-  const experiences = [
-    {
-      id: 1,
-      type: 'work',
-      role: 'Full Stack Web Developer Intern',
-      company: 'WhyTap (Why Global Services)',
-      duration: 'Oct 2024 – Present',
-      description:
-        'Created mobile-friendly websites using HTML, CSS, and React. Built backend APIs using Node.js and Express, and collaborated with the team to ensure seamless frontend-backend integration.',
-    },
-    {
-      id: 2,
-      type: 'work',
-      role: 'Office Assistant',
-      company: 'Mercury Fittings Pvt. Ltd.',
-      duration: 'Oct 2021 – July 2024',
-      description:
-        'Managed employee data using Excel and ERP software, prepared reports and shift schedules, and supported daily operations in the production department.',
-    },
-    {
-      id: 3,
-      type: 'education',
-      degree: 'B.Sc. Computer Science',
-      institution: `St. Peter's Institute of Higher Education and Research, Chennai`,
-      duration: '2018 – 2021',
-      description:
-        'Studied programming fundamentals, web development concepts, and database management with a focus on practical applications.',
-    },
-  ];
+ const experiences = [
+  {
+    id: 1,
+    type: 'work',
+    role: 'Full Stack Web Developer Intern',
+    company: 'Whytap',
+    duration: 'Nov 2024 – Present',
+    description:
+      'Working on front-end and mobile apps using HTML, CSS, JavaScript, and React/Ionic. Developed RESTful APIs with Node.js and Express, and implemented backend logic using Python and Django.',
+  },
+  {
+    id: 2,
+    type: 'work',
+    role: 'Graduate Engineer Trainee (Python Developer)',
+    company: 'BLP Industry.AI Pvt Ltd',
+    duration: 'Aug 2023 – Jun 2024',
+    description:
+      'Worked on Python development and contributed to AI/ML-related modules. Improved problem-solving and analytical skills through real-time development and team collaboration.',
+  },
+  {
+    id: 3,
+    type: 'work',
+    role: 'Java Developer Intern',
+    company: 'Bahwan Cyber Tek (BCT)',
+    duration: 'Jan 2023 – Apr 2023',
+    description:
+      'Worked on Spring Boot, MSSQL, Jasper Reports, and JMeter. Gained practical exposure to enterprise-grade systems and development workflows.',
+  },
+  {
+    id: 4,
+    type: 'education',
+    degree: 'B.Tech Computer Science and Engineering',
+    institution: 'Sri Manakula Vinayagar Engineering College, Puducherry',
+    duration: '2019 – 2023',
+    description:
+      'Graduated with a CGPA of 8.76. Focused on core subjects including data structures, web technologies, and software engineering.',
+  },
+];
+
 
   return (
     <section id="experience" className="py-20 bg-gray-900">
